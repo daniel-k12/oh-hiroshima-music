@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=OpenSans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Oh Hiroshima</title>
+</head>
+<body>
+    <div id="bg-img-1"></div>
+    <div id="bg-img-2"></div>
+    <div id="music-player">
+        <div style="display: flex;">
+            <img id="album-cover" data-amplitude-song-info="cover_art_url" width="400" height="400">
+            <ul>
+                <li class="amplitude-play-pause amplitude-song-container" data-amplitude-song-index="0">Ellipse</li>
+
+                <li class="amplitude-play-pause amplitude-song-container" data-amplitude-song-index="1">Mirage</li>
+
+                <li class="amplitude-play-pause amplitude-song-container" data-amplitude-song-index="2">Ruach</li>
+
+                <li class="amplitude-play-pause amplitude-song-container" data-amplitude-song-index="3">Holding Rivers</li>
+
+                <li class="amplitude-play-pause amplitude-song-container" data-amplitude-song-index="4">Aria</li>
+
+                <li class="amplitude-play-pause amplitude-song-container" data-amplitude-song-index="5">Drones</li>
+
+                <li class="amplitude-play-pause amplitude-song-container" data-amplitude-song-index="6">Neu</li>
+
+                <li class="amplitude-play-pause amplitude-song-container" data-amplitude-song-index="7">A Handful of Dust</li>
+
+                <li class="amplitude-play-pause amplitude-song-container" data-amplitude-song-index="8">Simulacra</li>
+
+                <li class="amplitude-play-pause amplitude-song-container" data-amplitude-song-index="9">Moderate Spectre</li>
+
+                <li class="amplitude-play-pause amplitude-song-container" data-amplitude-song-index="10">Darkroom Aesthetics</li>
+
+                <li class="amplitude-play-pause amplitude-song-container" data-amplitude-song-index="11">In Solar</li>
+
+                <li class="amplitude-play-pause amplitude-song-container" data-amplitude-song-index="12">Molnet</li>
+            </ul>
+        </div>
+
+        <span id="song-name" data-amplitude-song-info="name"></span>
+        <span id="album" data-amplitude-song-info="album"></span>
+        <span id="artist" data-amplitude-song-info="artist"></span>
+
+        <div id="controls">
+            <div id="progress-container">
+                <div class="amplitude-current-time"></div>
+
+                <progress class="amplitude-song-played-progress"></progress>
+
+                <div class="amplitude-duration-time"></div>
+            </div>
+
+            <div id="btn-controls">
+                <div class="amplitude-prev"></div>
+                <div class="amplitude-play-pause"></div>
+                <div class="amplitude-next"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@5.0.2/dist/amplitude.js"></script>
+    <script>
+        Amplitude.init({
+		"songs": [
+			{
+				"name": "Ellipse",
+				"artist": "Oh Hiroshima",
+				"album": "In Silence We Yearn",
+				"url": "/in silence we yearn/ellipse.mp3",
+				"cover_art_url": "/album covers/in silence we yearn-cover.jpg"
+			},
+			{
+				"name": "Mirage",
+				"artist": "Oh Hiroshima",
+				"album": "In Silence We Yearn",
+				"url": "/in silence we yearn/mirage.mp3",
+				"cover_art_url": "/album covers/in silence we yearn-cover.jpg"
+			},
+            {
+				"name": "Ruach",
+				"artist": "Oh Hiroshima",
+				"album": "In Silence We Yearn",
+				"url": "/in silence we yearn/ruach.mp3",
+				"cover_art_url": "/album covers/in silence we yearn-cover.jpg"
+			},
+            {
+				"name": "Holding Rivers",
+				"artist": "Oh Hiroshima",
+				"album": "In Silence We Yearn",
+				"url": "/in silence we yearn/holding rivers.mp3",
+				"cover_art_url": "/album covers/in silence we yearn-cover.jpg"
+			},
+            {
+				"name": "Aria",
+				"artist": "Oh Hiroshima",
+				"album": "In Silence We Yearn",
+				"url": "/in silence we yearn/aria.mp3",
+				"cover_art_url": "/album covers/in silence we yearn-cover.jpg"
+			},
+            {
+				"name": "Drones",
+				"artist": "Oh Hiroshima",
+				"album": "In Silence We Yearn",
+				"url": "/in silence we yearn/drones.mp3",
+				"cover_art_url": "/album covers/in silence we yearn-cover.jpg"
+			},
+            {
+				"name": "Neu",
+				"artist": "Oh Hiroshima",
+				"album": "Oscillation",
+				"url": "/oscillation/neu.mp3",
+				"cover_art_url": "/album covers/oscillation-cover.jpg"
+			},
+            {
+				"name": "A Handful of Dust",
+				"artist": "Oh Hiroshima",
+				"album": "Oscillation",
+				"url": "/oscillation/a handful of dust.mp3",
+				"cover_art_url": "/album covers/oscillation-cover.jpg"
+			},
+            {
+				"name": "Simulacra",
+				"artist": "Oh Hiroshima",
+				"album": "Oscillation",
+				"url": "/oscillation/simulacra.mp3",
+				"cover_art_url": "/album covers/oscillation-cover.jpg"
+			},
+            {
+				"name": "Moderate Spectre",
+				"artist": "Oh Hiroshima",
+				"album": "Oscillation",
+				"url": "/oscillation/moderate spectre.mp3",
+				"cover_art_url": "/album covers/oscillation-cover.jpg"
+			},
+            {
+				"name": "Darkroom Aesthetics",
+				"artist": "Oh Hiroshima",
+				"album": "Oscillation",
+				"url": "/oscillation/darkroom aesthetics.mp3",
+				"cover_art_url": "/album covers/oscillation-cover.jpg"
+			},
+            {
+				"name": "In Solar",
+				"artist": "Oh Hiroshima",
+				"album": "Oscillation",
+				"url": "/oscillation/in solar.mp3",
+				"cover_art_url": "/album covers/oscillation-cover.jpg"
+			},
+            {
+				"name": "Molnet",
+				"artist": "Oh Hiroshima",
+				"album": "Oscillation",
+				"url": "/oscillation/molnet.mp3",
+				"cover_art_url": "/album covers/oscillation-cover.jpg"
+			}
+        ],
+
+        "callbacks": {
+            "loadedmetadata": function() {
+                if(Amplitude.getActiveSongMetadata().album === 'In Silence We Yearn') {
+                    gsap.to('#bg-img-1', {opacity: 1, duration: 1});
+                    gsap.to('#bg-img-2', {opacity: 0, duration: 1});
+                } else if(Amplitude.getActiveSongMetadata().album === 'Oscillation') {
+                    gsap.to('#bg-img-1', {opacity: 0, duration: 1});
+                    gsap.to('#bg-img-2', {opacity: 1, duration: 1});
+                }
+            }
+        }
+    });
+    </script>
+    <script src="set_song_progress.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
+</body>
+</html>

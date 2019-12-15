@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'OpenSans', sans-serif;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  background: #424242 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #212121 !important;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#bg-img-1, #bg-img-2 {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#bg-img-1 {
+  background-image: url("bg-img-1.jpg");
+}
+
+#bg-img-2 {
+  opacity: 0;
+  background-image: url("bg-img-2.jpg");
+}
+
+::-webkit-scrollbar-thumb {
+  background: #212121;
+}
+
+::-webkit-scrollbar-track {
+  background: #424242;
+}
+
+#music-player {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#music-player * {
+  margin: 8px;
+}
+
+#music-player ul {
+  height: 400px;
+  width: 240px;
+  list-style: none;
+  overflow-y: auto;
+  scrollbar-color: #424242 #212121;
+}
+
+#music-player ul .amplitude-song-container {
+  margin: 0;
+  padding: 8px;
+  color: #757575;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+#music-player ul .amplitude-song-container:hover {
+  background-color: #424242;
+}
+
+#music-player ul .amplitude-active-song-container {
+  color: white;
+  background-color: #626262;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#music-player ul .amplitude-active-song-container:hover {
+  background-color: #626262;
+}
+
+#music-player #song-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#music-player #artist {
+  color: #757575;
+}
+
+#music-player #controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#music-player #controls #progress-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+#music-player #controls progress {
+  background-color: #424242;
+  height: 8px;
+  width: 300px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+#music-player #controls progress::-moz-progress-bar {
+  background-color: #bdbdbd;
+}
+
+#music-player #controls progress::-webkit-progress-value {
+  background: #bdbdbd;
+}
+
+#music-player #controls progress:hover {
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+}
+
+#music-player #controls #btn-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#music-player #controls #btn-controls .amplitude-prev, #music-player #controls #btn-controls .amplitude-play-pause, #music-player #controls #btn-controls .amplitude-paused, #music-player #controls #btn-controls .amplitude-playing, #music-player #controls #btn-controls .amplitude-next {
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+#music-player #controls #btn-controls .amplitude-prev {
+  background-image: url("/icons/prev.svg");
+}
+
+#music-player #controls #btn-controls .amplitude-paused {
+  background-image: url("/icons/play.svg");
+}
+
+#music-player #controls #btn-controls .amplitude-playing {
+  background-image: url("/icons/pause.svg");
+}
+
+#music-player #controls #btn-controls .amplitude-next {
+  background-image: url("/icons/next.svg");
+}
+/*# sourceMappingURL=style.css.map */
